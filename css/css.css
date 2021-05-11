@@ -1,0 +1,52 @@
+.header {
+    height: 100px;
+    width: 100%;
+    background-color: rgb(235, 193, 54);
+    padding-top: 50px;
+    text-align: center;
+}
+
+.menu {
+    height: 100px;
+    width: 100%;
+    background-color: rgb(235, 193, 54);
+    padding-top: 50px;
+    text-align: center;
+}
+
+.menuItem {
+    font-size: 30px;
+    margin: 25px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.active {
+    background-color: rgb(122, 101, 31);
+    color: aliceblue;
+}
+
+.slider {
+    width: 100%;
+    height: 500px;
+}
+
+.img {
+    object-fit: fill;
+    width: 100%;
+    height: 500px;
+}
+
+.content {
+    margin: 25px;
+    padding: 15px;
+    text-align: center;
+}
+
+.footer {
+    height: 100px;
+    width: 100%;
+    background-color: rgb(235, 193, 54);
+    padding-top: 30px;
+    text-align: center;
+}
