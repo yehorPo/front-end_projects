@@ -1,3 +1,18 @@
+.bodyLight {
+    font-family: PT Sans, serif;
+    font-size: 14px;
+    line-height: 22px;
+    background-color: rgb(230, 223, 134);
+}
+
+.bodyDark {
+    color: white;
+    font-family: PT Sans, serif;
+    font-size: 14px;
+    line-height: 22px;
+    background-color: rgb(61, 61, 61);
+}
+
 .header {
     height: 100px;
     width: 100%;
@@ -6,10 +21,28 @@
     text-align: center;
 }
 
+.headerDark {
+    height: 100px;
+    width: 100%;
+    padding-top: 50px;
+    text-align: center;
+    color: white;
+    background-color: rgb(61, 61, 61);
+}
+
 .menu {
     height: 100px;
     width: 100%;
     background-color: rgb(235, 193, 54);
+    padding-top: 50px;
+    text-align: center;
+}
+
+.menuDark {
+    height: 100px;
+    width: 100%;
+    color: white;
+    background-color: rgb(61, 61, 61);
     padding-top: 50px;
     text-align: center;
 }
@@ -47,6 +80,15 @@
     height: 100px;
     width: 100%;
     background-color: rgb(235, 193, 54);
+    padding-top: 30px;
+    text-align: center;
+}
+
+.footerDark {
+    height: 100px;
+    width: 100%;
+    color: white;
+    background-color: rgb(61, 61, 61);
     padding-top: 30px;
     text-align: center;
 }

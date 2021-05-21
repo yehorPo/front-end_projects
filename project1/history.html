@@ -11,16 +11,19 @@
     <link href="css/bootstrap-4.0.0.css" rel="stylesheet">
 </head>
 
-<body style="font-family:PT Sans, serif; font-size: 14px; line-height: 22px; background-color: rgb(230, 223, 134);">
-    <header class="header">
+<body class="bodyLight" id="body">
+    <header class="header" id="header">
         <h1 class="logo">
             <span class="badge badge-pill" style="background-color: rgb(122, 101, 31);">Guitars world</span>
         </h1>
     </header>
-    <div class="menu">
+    <div class="menu" id="menu1">
         <a href="index.html" class="menuItem badge-warning badge-pill">Home</a>
         <a href="types.html" class="menuItem badge-warning badge-pill">Types</a>
         <a href="history.html" class="menuItem badge-warning badge-pill">About</a>
+    </div>
+    <div class="menu" id="menu2">
+        <a class="menuItem badge-warning badge-pill" id="darkButton">Dark</a>
     </div>
     <br>
     <div class="conteiner text-center">
@@ -57,12 +60,13 @@
     <br>
     <hr>
     <br>
-    <footer class="footer">
+    <footer class="footer" id="footer">
         <h2 class="logo">
             <span class="badge badge-pill" style="background-color: rgb(122, 101, 31);">Developed by: ShipOFF inc.</span>
         </h2>
     </footer>
     <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/changeTheme.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap-4.0.0.js"></script>
 </body>
