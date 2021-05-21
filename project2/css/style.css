@@ -1,0 +1,270 @@
+body {
+    background-color: #FCF1E7;
+}
+
+.header {
+    margin-top: 24px;
+    padding-bottom: 20px;
+}
+
+.content {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.logo {
+    max-width: 122px;
+    width: 100%;
+    height: 100%;
+    margin-right: 23px;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.contact {
+    background-color: #726092;
+    max-width: 280px;
+    width: 100%;
+}
+.more {
+    max-width: 514px;
+    width: 100%;
+    background-color: #726092;
+    margin-left: 23px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    padding-right: 20px;
+}
+
+.contact__info {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ccb0ed;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.main {
+    margin-top: 22px;
+    margin-bottom: 25px;
+}
+
+.left__side {
+    max-width: 185px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.left__side__top {
+    width: 100%;
+    background-color: #726092;
+    padding: 20px 20px 17px 14px;
+}
+
+.left__side__bottom {
+    width: 100%;
+    height: 130px;
+}
+
+.left__side__bottom img {
+    width: 100%;
+    height: 100%;
+}
+
+.main__side {
+    margin-left: 20px;
+    width: 100%;
+}
+
+.main__side__top {
+    background-color: #cdb1ee;
+    width: 100%;
+    padding: 23px 23px 20px;
+}
+
+.main__side__top span {
+    font-weight: bold;
+}
+
+.main__side__top li {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #726092;
+    font-size: 14px;
+    line-height: 22px;
+    list-style: none;
+    position: relative;
+    margin-left: 50px;
+}
+
+.main__side__top li:before {
+    content: "■";
+    margin-right: 5px;
+}
+
+.main__side__middle {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.main__side__middle__img {
+    margin-right: 23px;
+    margin-bottom: 20px;
+}
+
+.main__side__middle__img img {
+    width: 132.5px;
+    height: 132.5px;
+}
+
+.main__side__middle__img:nth-child(5) {
+    margin: 0;
+}
+
+.main__side__bottom {
+    width: 100%;
+    display: flex;
+}
+
+.main__side__bottom__block {
+    padding: 23px 23px 20px;
+    background-color: #cdb1ee;
+    flex-basis: 50%;
+}
+
+.main__side__bottom__block:nth-child(1) {
+    margin-right: 17px;
+}
+
+.footer {
+    margin-top: 23px;
+}
+
+.footer__block {
+    padding: 23px 23px 20px;
+    background-color: #726092;
+    display: flex;
+
+    width: 33%;
+    margin-right: 28px;
+}
+
+.last_block {
+    background: none;
+}
+
+.middle__block {
+    flex-direction: column;
+}
+
+.middle__block li {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #cdb1ee;
+    font-size: 14px;
+    line-height: 22px;
+    list-style: none;
+}
+
+.middle__block li:before {
+    content: "■";
+    margin-right: 5px;
+}
+
+.title {
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.title2 {
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    line-height: 22px;
+    color: black;
+    margin-bottom: 30px;
+}
+
+.text__block {
+    display: flex;
+    flex-direction: column;
+}
+
+.text__block:nth-child(1) {
+    margin-right: 73px;
+}
+
+.last_block {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+}
+
+.last__block__half_top{
+    width: 100%;
+    height: 75px;
+    background-color: #726092;
+}
+
+.last__block__half_bottom {
+    width: 100%;
+    height: 75px;
+}
+
+.last__block__half_bottom img {
+    width: 100%;
+    height: 100%;
+}
+
+.footer {
+    margin-bottom: 25px;
+}
+
+.text4 {
+    color: #cdb1ee;
+    font-size: 14px;
+    line-height: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.text {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #cdb1ee;
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.text2 {
+    color: #726092;
+    margin-top: 45px;
+}
+
+.text3 {
+    color: #726092;
+}
+
+hr {
+    max-width: 960px;
+    margin: 0 auto;
+    height: 2px;
+    background-color: #726092;
+    border: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
