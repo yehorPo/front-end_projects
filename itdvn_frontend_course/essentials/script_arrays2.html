@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+</head>
+<body>
+<script>
+    var array = Array(5);
+    for(var i = 0;i<array.length;i++){
+        array[i] = Array(5);
+    }
+    
+    for(var i = 0;i<5;i++){
+        for(var j =0;j<5;j++){
+            array[i][j] = prompt("Enter "+(i+1)+'.'+(j+1)+" value:");
+        }
+    }
+    for(var i = 0;i<5;i++){
+        for(var j =0;j<5;j++){
+            if(i==j){
+                switch(array[i][j]){
+                    case +array[i][j]<0:{
+                        array[i][j]=0; 
+                        break;} 
+                        
+                    case +array[i][j]>0:{
+                        array[i][j]=1; 
+                        break;
+                    }
+                    
+                }
+            }
+            document.write(+array[i][j]);
+        }
+        document.write("</br>");
+    }
+    
+
+</script>
+</body>
+</html>

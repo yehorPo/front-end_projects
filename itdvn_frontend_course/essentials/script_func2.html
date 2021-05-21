@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+</head>
+<body>
+<script>
+    var input = prompt("Enter value");
+    input = parseInt(input);
+    function check(input){
+        input>0 ? document.write("<p style = 'color:green'>Positive</p>"+"</br>")  :  document.write("<p style = 'color:red'>Negative</p>"+"</br>");
+        document.write("<hr/>");
+        input%2==0 ? document.write("<p style = 'color:green'>Even</p>"+"</br>")  :  document.write("<p style = 'color:red'>Odd</p>"+"</br>");
+        document.write("<hr/>");
+        /*switch(input){
+            case input%2==0:
+                document.write(input+" - aliquot to 2"+"</br>");
+                break;
+            
+            case input%3==0:
+                document.write(input+" - aliquot to 3"+"</br>");
+                break;
+            
+            case input%5==0:
+                document.write(input+" - aliquot to 5"+"</br>");
+                break;
+            
+            case input%6==0:
+                document.write(input+" - aliquot to 6"+"</br>");
+                break;
+            
+            case input%9==0:
+                document.write(input+" - aliquot to 9"+"</br>");
+                break;
+            
+            default:
+                document.write(input+" - doesn`t aliquot to any of numbers"+"</br>");
+                break;
+            
+        }*/
+        if(input%2==0){
+           document.write(input+" - aliquot to 2"+"</br>"); 
+        }
+            
+        if(input%3==0){
+            document.write(input+" - aliquot to 3"+"</br>");
+        }
+            
+        if(input%5==0){
+             document.write(input+" - aliquot to 5"+"</br>");
+        }
+        if(input%6==0){
+            document.write(input+" - aliquot to 6"+"</br>");
+        }
+        if(input%9==0){
+            document.write(input+" - aliquot to 9"+"</br>");
+        }
+           
+    }
+    check(input);
+</script>
+</body>
+</html>

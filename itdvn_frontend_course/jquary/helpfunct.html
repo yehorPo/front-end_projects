@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>test 1</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script>
+        $(function() {
+            $("p").each(function() {
+                $(this).data("Index", $(this).index());
+            });
+            $("p").click(function() {
+
+                $(this).data("value", $(this).text());
+                alert($(this).data("value"));
+                alert($(this).data("Index"));
+            });
+        })
+    </script>
+</head>
+
+<body>
+    <p>Параграф 0</p>
+    <p>Параграф 1</p>
+    <p>Параграф 2</p>
+    <p>Параграф 3</p>
+    <p>Параграф 5</p>
+    <p>Параграф 6</p>
+    <p>Параграф 7</p>
+    <p>Параграф 8</p>
+    <p>Параграф 9</p>
+    <p>Параграф 10</p>
+</body>
+
+</html>

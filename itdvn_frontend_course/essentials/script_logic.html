@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+</head>
+<body>
+    <h1>Task 1</h1>
+<script>
+    var a = prompt("Enter a:","");
+    var b =  prompt("Enter b:","");
+    a=parseInt(a);
+    b=parseInt(b);
+    var counter = a;
+    while(counter<=b){
+        if(counter%2==1){
+            document.write("<strong>"+counter+"</strong>"+"</br>")
+        } else { 
+            document.write(counter+"</br>");
+        }
+        counter++;
+        }
+    
+</script>
+    <h1>Task 2</h1>
+    <script>
+        var a = prompt("Enter a:","");
+        a=parseInt(a);
+        var counter = 1;
+        var result = 1;
+        do{
+            result*=counter;
+            counter++;
+        }while(counter<=a);
+        document.write(result);
+    
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Task 1</title>
+    <link href="testcss.css" rel="stylesheet">
+    <script>
+        window.onload = function(){
+            var log = "admin", pass = "12345";
+            function login(){
+                var tempLog = document.getElementById("login").value;
+                var tempPass = document.getElementById("password").value;
+                if(tempLog==log&&tempPass==pass){
+                    document.getElementById("login").className = "correct";
+                    document.getElementById("password").className = "correct";
+                }else{
+                    document.getElementById("login").className = "incorrect";
+                    document.getElementById("password").className = "incorrect";
+                }
+            }
+            document.getElementById("button").onclick = function(){
+            buttonHandler = login();
+            }
+        }
+        
+    </script>
+
+</head>
+<body>
+    <h1 id="head">Login</h1>
+    <a>Enter login:  </a><input type="text" id="login"><br/>
+    <a>Enter password:  </a><input type="password" id="password"><br/>
+    <input type="button" value="Go" id="button"></input>
+</body>
+</html>

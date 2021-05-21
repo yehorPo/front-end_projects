@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+</head>
+<body>
+<script>
+    function Human(name, age){
+        this.age = age;
+        this.name = name;
+    }
+    Human.prototype.toString = function humanToString() {
+        var res = "Name: "+this.name+"; "+"Age: "+this.age+"</br>"; 
+        return res; 
+    }
+    var fred = new Human("Fred",25);
+    var jhon = new Human("Jhon",30);
+    var luke = new Human("Luke",12);
+    var george = new Human("George",65);
+    var humans = Array(fred, jhon,luke,george);
+    document.write(humans.join(' '));
+   /* var sortAge = function(humans) {
+        var temp;
+        for(var i=0;i<humans.length;i++){
+            temp = humans[i];
+            if(temp>humans[i+1]){
+                humans[i]=humans[i+1];
+                humans[i+1]=temp;
+            }
+        }
+    }*/
+    function sort1(a,b) {
+        var temp1 = a.age;
+        var temp2 = b.age;
+        if(temp1<temp2){
+            return -1;
+        }
+        if(temp1>temp2){
+            return 1;
+        }else{
+            return 0;
+        }
+    }
+    function sort2(a,b) {
+        var temp1 = a.age;
+        var temp2 = b.age;
+        if(temp1<temp2){
+            return 1;
+        }
+        if(temp1>temp2){
+            return -1;
+        }else{
+            return 0;
+        }
+    }
+    humans.sort(sort1); 
+    document.write("<hr/>");
+    document.write(humans.join(' '));
+    humans.sort(sort2); 
+    document.write("<hr/>");
+    document.write(humans.join(' '));
+    
+</script>
+</body>
+</html>

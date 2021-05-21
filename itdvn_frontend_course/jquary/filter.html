@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>test 1</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <style>
+        .cur {
+            background-color: darkred;
+        }
+    </style>
+    <script>
+        $(function() {
+            $("#odd").on("click", chooseOdd);
+            $("#reset").on('click', reset);
+            $("#even").on('click', chooseEven);
+            $("#first").on('click', chooseFirst);
+            $("#last").on('click', chooseLast);
+            $("#index").on('click', chooseIndex);
+            $("#content").on('click', chooseConten);
+
+            function chooseOdd() {
+                $("p:odd").addClass('cur');
+            }
+
+            function chooseIndex() {
+                var id = prompt("Enter index");
+                $("p:eq(" + id + ")").addClass('cur');
+            }
+
+            function chooseConten() {
+                var cont = prompt("Enter content");
+                $("p:contains(" + cont + ")").addClass('cur');
+            }
+
+            function chooseFirst() {
+                $("p:first").addClass('cur');
+            }
+
+            function chooseLast() {
+                $("p:last").addClass('cur');
+            }
+
+            function chooseEven() {
+                $("p:even").addClass('cur');
+            }
+
+            function reset() {
+                $("*").removeClass('cur');
+            }
+        })
+    </script>
+</head>
+
+<body>
+    <p>Параграф 0</p>
+    <p>Параграф 1</p>
+    <p>Параграф 2</p>
+    <p>Параграф 3</p>
+    <p>Параграф 5</p>
+    <p>Параграф 6</p>
+    <p>Параграф 7</p>
+    <p>Параграф 8</p>
+    <p>Параграф 9</p>
+    <p>Параграф 10</p>
+    <input type="button" value="Choose odd" id="odd">
+    <input type="button" value="Choose even" id="even">
+    <input type="button" value="Choose index" id="index">
+    <input type="button" value="Choose content" id="content">
+    <input type="button" value="Choose first" id="first">
+    <input type="button" value="Choose last" id="last">
+    <input type="button" value="Reset" id="reset">
+
+</html>

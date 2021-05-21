@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+</head>
+<body>
+<script>
+    var doc = {
+            header: "Beginnig of document",
+            body: "Main part of document",
+            footer: "End of document",
+            date: "15.03.2020",
+            add: {
+                addHeader: "Beginning of document`s add",
+                addBody: "Main part of document`s add",
+                addFooter: "End of document`s add",
+                addDate: "15.03.2020",
+                showAdd: function(){
+                    document.write("<p style='color:green'>Header: "+this.addHeader+"</br>"+"<p style='color:red'>Body: "+this.addBody+"</br>"+"<p style='color:9FE94F'>Footer: "+this.addFooter+"</br>"+"<p style='color:blue'>Date: "+this.addDate+"</br>");
+                }
+                },
+            show: function(){
+                document.write("<p style='color:green'>Header: "+this.addHeader+"</br>"+"<p style='color:red'>Body: "+this.addBody+"</br>"+"<p style='color:9FE94F'>Footer: "+this.addFooter+"</br>"+"<p style='color:blue'>Date: "+this.addDate+"</br>");
+            }
+
+
+            }
+    doc.show();
+    doc.add.showAdd();
+
+
+
+
+
+    
+</script>
+</body>
+</html>

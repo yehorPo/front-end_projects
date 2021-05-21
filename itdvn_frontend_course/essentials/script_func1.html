@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+</head>
+<body>
+<script>
+    var a = prompt("Enter first value:");
+    var operation = prompt("Enter operation(+,-,/,*)");
+    var b = prompt("Enter second value:");
+    b = parseInt(b);
+    a = parseInt(a);
+    function add(a,b){
+        return a+b;
+    }
+    function minus(a,b){
+        return a-b;
+    }
+    function mult(a,b){
+        return a*b;
+    }
+    function divide(a,b){
+        return a/b;
+    }
+    switch(operation){
+        case '+':{
+            document.write(add(a,b));
+            break;
+        }
+        case '-':{
+            document.write(minus(a,b));
+            break;
+        }
+        case '*':{
+            document.write(mult(a,b));
+            break;
+        }
+        case '/':{
+            document.write(divide(a,b));
+            break;
+        }
+        default:{
+            document.write(operation+" - wrong sign");
+        }
+    }
+</script>
+</body>
+</html>

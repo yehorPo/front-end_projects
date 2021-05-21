@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>test 1</title>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#button").on('click', conf);
+            $("#color").on('click', confColor);
+        })
+
+        function confColor() {
+            var col = prompt("Enter your color");
+            $("*").css("color", col);
+        }
+
+        function conf() {
+            var elem = prompt("Enter p, h1, h2, h3, div: ");
+            var val = ["p", "h1", "h2", "h3", "div"];
+            if (val.includes(elem)) {
+                let text = prompt("Enter text: ");
+                $(elem).text(text);
+            } else {
+                alert("Incorrect value");
+                conf()
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <p></p>
+    <h1></h1>
+    <h2></h2>
+    <h3></h3>
+    <div></div>
+    <input type="button" value="Configure" id="button">
+    <input type="button" value="Color" id="color">
+</body>
+
+</html>

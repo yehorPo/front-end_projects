@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Task 2</title>
+    <script>
+        function get(id){
+            return document.getElementById(id);
+            }
+        var mSecCounter = 0;
+        var mSec10Counter = 0;
+        var secCounter = 0;
+        var sec10Counter =0;
+        var minCounter = 0;
+        var min10Counter = 0;
+        window.onload = function(){
+            var msec = get("msec");
+            var msec10 = get("msec10");
+            var sec = get("sec");
+            var sec10 = get("sec10");
+            var min = get("min");
+            var min10 = get("min10");
+                function timer(){
+            
+                mSecCounter++;
+                if(mSecCounter==10){
+                    mSec10Counter++;
+                    mSecCounter = 0;
+                }
+                if(mSec10Counter==10){
+                    secCounter++;
+                    mSec10Counter = 0;
+                }
+                if(secCounter==10){
+                    sec10Counter++;
+                    secCounter = 0;
+                }
+                if(sec10Counter==6){
+                    minCounter++;
+                    sec10Counter = 0;
+                }
+                if(minCounter==10){
+                    min10Counter++;
+                    minCounter = 0;
+                }
+                min10.innerHTML = min10Counter;
+                min.innerHTML = minCounter;
+                sec.innerHTML = secCounter;
+                sec10.innerHTML = sec10Counter;
+                msec10.innerHTML = mSec10Counter;
+                msec.innerHTML = mSecCounter;
+                }
+            get("start").onclick = function(){
+                timerHandler = setInterval(timer,10);
+            }
+            get("clear").onclick = function(){
+                mSecCounter = 0;
+                mSec10Counter = 0;
+                secCounter = 0;
+                sec10Counter =0;
+                minCounter = 0;
+                min10Counter = 0;
+                min10.innerHTML = 0;
+                min.innerHTML = 0;
+                sec.innerHTML = 0;
+                sec10.innerHTML = 0;
+                msec10.innerHTML = 0;
+                msec.innerHTML = 0;
+            }
+            get("stop").onclick = function(){
+                clearInterval(timerHandler);
+            }
+        }
+        
+            
+            
+        
+        
+    </script>
+</head>
+<body>
+<a id="min10">0</a><a id="min">0</a><a>:</a><a id="sec10">0</a><a id="sec">0</a><a>:</a><a id="msec10">0</a><a id="msec">0</a>
+<br/>
+<div>
+    <input type="button" value="Start" id="start" onclick="setInterval(timer,10)"></input>
+    <input type="button" value="Stop" id="stop"></input>
+    <input type="button" value="Clear" id="clear"></input>  
+</div>
+
+</body>
+</html>

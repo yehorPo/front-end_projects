@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Task 1</title>
+    <link href="testcss.css" rel="stylesheet">
+    <script>
+        var correct = 69;
+        var counter = 0;
+        window.onload = function() {
+            function game() {
+                if (counter != 0) {
+                    counter = 0;
+                    document.getElementById("correct").className = "start";
+                    document.getElementById("incorrect").className = "start";
+                }
+                var input = prompt("Enter number from 1 to 100:");
+                input = parseInt(input);
+                if (input < 1 && input > 100) {
+                    alert("You are debil");
+                    game();
+                }
+                if (input == correct) {
+                    document.getElementById("correct").className = "correct";
+                } else {
+                    document.getElementById("incorrect").className = "incorrect";
+                }
+                counter++;
+            }
+            document.getElementById("button").onclick = function() {
+                gameStarter = game();
+            }
+        }
+    </script>
+
+</head>
+
+<body>
+    <h1 id="head">Let`s play!</h1>
+    <input type="button" value="Start" id="button"></input>
+    <br/>
+    <div id="correct">Correct</div>
+    <div id="incorrect">Incorrect</div>
+</body>
+
+</html>

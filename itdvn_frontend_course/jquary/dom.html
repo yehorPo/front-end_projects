@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>test 1</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <style>
+        .red {
+            border-color: rgb(255, 0, 0);
+            border-style: dotted;
+            padding: 1;
+        }
+        
+        .green {
+            border-style: dotted;
+            border-color: green;
+            padding: 2;
+        }
+        
+        .yellow {
+            border-color: yellow;
+            border-style: dotted;
+            padding: 3;
+        }
+        
+        .common {
+            border-style: hidden;
+        }
+    </style>
+    <script>
+        $(function() {
+            $('*').mouseover(select);
+            $('*').mouseout(deselect);
+        })
+
+        function select() {
+            $(this).parents().addClass('red');
+            $(this).children().addClass('green');
+            $(this).siblings().addClass('yellow')
+
+        }
+
+        function deselect() {
+            $('*').removeClass('red , green , yellow');
+        }
+    </script>
+</head>
+
+<body>
+    <div>
+        <p>Параграф 0</p>
+        <p>Параграф 1</p>
+        <p>Параграф 2</p>
+        <p>Параграф 3</p>
+    </div>
+    <p>Параграф 5</p>
+    <p>Параграф 6</p>
+    <p>Параграф 7</p>
+    <p>Параграф 8</p>
+    <div>
+        <p>Параграф 9</p>
+        <p>Параграф 10</p>
+        <a href="https://rt.pornhub.com/">lol</a>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+</head>
+<body>
+<script>
+    var n = prompt("Enter n:","");
+    n = parseInt(n);
+    var array = Array(n);
+    for(var i=0; i<n;i++){  
+        array[i] = prompt("Enter "+ (i+1) +" value:");
+    }
+    document.write("<h1>Smallest one</h1>");
+    var temp = array[0];
+    for(var i =1;i<=n;i++){
+        if(temp>array[i]){
+            temp=array[i];
+        }
+    }
+    document.write(temp);
+    document.write("</hr>");
+    document.write("<h1>Biggest one</h1>");
+    temp = array[0];
+    for(var i =1;i<=n;i++){
+        if(temp<array[i]){
+            temp=array[i];
+        }
+    }
+    document.write(temp);
+    document.write("</hr>");
+    document.write("<h1>Summary</h1>");
+    temp = 0;
+    for(var i = 0;i<n;i++){
+        temp+= +array[i];
+    }
+    document.write(temp);
+    document.write("</hr>");
+    document.write("<h1>Avarage</h1>");
+    var result = temp/n;
+    document.write(result);
+    document.write("</hr>");
+    document.write("<h1>ODD</h1>");
+    for(var i = 0;i<n;i++){
+        if(array[i]%2==1){
+            document.write(array[i]+"</br>");
+        }
+    }
+
+    
+</script>
+
+</body>
+</html>

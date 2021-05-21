@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+</head>
+<body>
+<script>
+    function Human(name,age){
+        this.age = age;
+        this.name = name;
+        var nationality;
+        var sex;
+        var birthDay = function(){
+            this.age++;
+        }
+    }
+    Human.prototype.toString = function humanToString(){
+        return "[Name: "+this.name+", "+"age: "+this.age+"]"+"</br>";
+    }
+    var testHuman = new Human("Nikita", 19);
+    testHuman.sex = "man";
+    testHuman.nationality = "opol4enets";
+
+</script>
+</body>
+</html>

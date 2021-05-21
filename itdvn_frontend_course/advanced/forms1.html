@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Task 1</title>
+    <script>
+        window.onload = function(){
+            var res = 0;
+            document.getElementById("submit").onclick = result;
+
+        }
+        
+    </script>
+
+</head>
+<body>
+    <h1>Order your pizza</h1>
+    <form name="pizza">
+        <a>Choose your pizza`s size: </a>
+        <input type="radio" name="size" value="small">Small
+        <input type="radio" name="size" value="medium">Medium
+        <input type="radio" name="size" value="big">Big
+        <br/>
+        <a>Choose your pizza`s ingredients: </a>
+        <input type="checkbox" name="content" value="Mashrooms">Mashrooms
+        <input type="checkbox" name="content" value="Cheese">Cheese
+        <input type="checkbox" name="content" value="Olives">Olives
+        <input type="checkbox" name="content" value="Tomatoes">Tomatoes
+        <input type="checkbox" name="content" value="Becon">Becon
+        <br/>
+        <a>Enter information: </a>
+        <br/>
+        <input type="email" placeholder="Enter your email: " id="email">
+        <br/>
+        <input type="tel" placeholder="Enter phone number: ">
+        <br/>
+        <input type="submit" value="Submit" id="submit">
+    </form>
+</body>
+</html>

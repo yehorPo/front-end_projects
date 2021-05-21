@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>JSON testing</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+    <script>
+        $(function() {
+            $('#submit').on('click', function() {
+                let info = {
+                    'firstName': $('#firstName').val(),
+                    'secondName': $('#secondName').val(),
+                    'date': $('#birth').val()
+                }
+                alert('First name: ' + info.firstName + ' || ' + 'Second name: ' + info.secondName + ' || ' + 'Date of birth: ' + info.date);
+            });
+        })
+    </script>
+</head>
+
+<body>
+    <pre style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+Enter your first name: <input type="text" id="firstName" placeholder="First name">
+Enter your second name: <input type="text" id="secondName" placeholder="Second name"> 
+Enter date of your birth: <input type="date" id="birth">
+<input type="submit" id="submit">
+</pre>
+</body>
+
+</html>

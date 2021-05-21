@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+</head>
+<body>
+<script>
+    function testObject(name){
+        this.name = name;
+    }
+    testObject.content = "-_-";
+    testObject.prototype.print = function(){
+        document.write(this.name+"</br>");
+    }
+    testObject.multPrintContent = function(mult){
+        for(var i = 0;i<mult;i++){
+            document.write((i+1)+"."+" "+testObject.content+"</br>")
+        }
+    }
+    var example = new testObject("test1");
+    example.print();
+    testObject.multPrintContent(4);
+
+
+</script>
+</body>
+</html>
